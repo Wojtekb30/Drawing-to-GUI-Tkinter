@@ -22,7 +22,7 @@ def createbutton(pic, startx, starty):
         r, g, b = pic[startx,y]
         y=y+1
     tekst = "button"+str(x)+"x"+str(y)+" = tk.Button(root, text='button', fg='white', bg='blue')"+"\n\nbutton"
-    tekst = tekst+str(x)+str(y)+".place(x="+str(startx)+", y=" + str(starty) +", height="+str(y-starty)+", width="+str(x-startx)+")\n\n"
+    tekst = tekst+str(x)+"x"+str(y)+".place(x="+str(startx)+", y=" + str(starty) +", height="+str(y-starty)+", width="+str(x-startx)+")\n\n"
     
     return x-startx, y-starty, x, y, tekst
 
